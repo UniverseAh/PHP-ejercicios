@@ -23,6 +23,20 @@
     <br>
     <a href="t1p10formulario.php"> formulario t1p10 </a>
     <br>
+    <a href="t1p11formulario.php"> formulario t1p11 </a>
+    <br>
+    <a href="t1p13formulario.php"> formulario t1p13 </a>
+    <br>
+    <a href="t1p14.php"> Solución t1p14 </a>
+    <br>
+    <a href="t1p15formulario.php"> formulario t1p15 </a>
+    <br>
+    <a href="t1p16.php"> Solución t1p16 </a>
+    <br>
+    <a href="t1p17.php"> Solución t1p17 </a>
+    <br>
+    <h1> Tutorial 2</h1>
+    <a href="t2p18.php"> Solución t2p18 </a>
     <br>
 
 

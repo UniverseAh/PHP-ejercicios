@@ -12,13 +12,13 @@
         <input type="text" name="nombre">
         <br>
         <br>
-        <input type="radio" name="noestuido" value="suma">No tiene Estudios
+        <input type="radio" name="boton" value="NoEst">No tiene Estudios
         <br>
         <br>
-        <input type="radio" name="primario" value="resta">estudios primarios
+        <input type="radio" name="boton" value="EstPri">estudios primarios
         <br>
         <br>
-        <input type="radio" name="secundario" value="suma">estudios secundarios
+        <input type="radio" name="boton" value="EstSec">estudios secundarios
         <br>
         <br>
         <input type="submit" name="operar">
