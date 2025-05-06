@@ -29,7 +29,6 @@
         $v2=50;
         $p=retornarpromedio($v1,$v2);
         echo $p;
-        */
 
         function cuadradocubo($valor,&$cuad,&$cub)
         {
@@ -39,6 +38,25 @@
         cuadradocubo(2,$c1,$c2);
         echo "El cuadrado de 2 es:".$c1."<br>";
         echo "El cubo de 2 es:".$c2;
+        */
+
+        function compararcontras($nombre,$contra1,$contra2) {
+            if ($contra1 == $contra2) {
+                echo"Ininio Exitoso, Bienvenido";
+            }elseif ($contra1 != $contra2) {
+                echo "Las Claves no coinciden, Inténtelo denuevo";
+            }else{
+                echo "Error";
+            }
+        }
+
+        if(isset($_REQUEST['nombre']) && isset($_REQUEST['contra1']) && isset($_REQUEST['contra2'])){
+            $nombre = $_REQUEST['nombre'];
+            $contra1 = $_REQUEST['contra1'];
+            $contra2 = $_REQUEST['contra2'];
+            compararcontras($nombre,$contra1,$contra2);
+        }
+
 
     ?>
 

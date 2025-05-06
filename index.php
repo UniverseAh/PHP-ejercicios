@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juan Arteaga</title>
 </head>
 <body>
-    <h1> Aprendiz </h1>
+    <h1> Tutorial 1 </h1>
     <a href="t1p3.php"> Solución t1p3 </a>
     <br>
     <a href="t1p4.php"> Solución t1p4 </a>
@@ -35,9 +35,25 @@
     <br>
     <a href="t1p17.php"> Solución t1p17 </a>
     <br>
+
     <h1> Tutorial 2</h1>
-    <a href="t2p18.php"> Solución t2p18 </a>
+    <a href="t2p18formulario.php"> formulario t2p18 </a>
     <br>
+    <a href="t2p20formulario.php"> formulario t2p20 </a>
+    <br>
+    <a href="t2p20segundoformulario.php"> segundo formulario t2p20 </a>
+    <br>
+    <a href="t2p21.php"> Solución t2p21 </a>
+    <br>
+    <a href="t2p22formulario.php"> formulario t2p22 </a>
+    <br>
+    <a href="t2p23formulario.php"> formulario t2p23 </a>
+    <br>
+    <a href="t2p24.php"> Solución t2p24 </a>
+    <br>
+    <a href="t2p25formulario.php"> formulario t2p25 </a>
+    <br>
+    <a href="t2p26formulario.php"> formulario t2p26 </a>
 
 
 
