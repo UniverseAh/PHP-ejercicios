@@ -8,14 +8,16 @@
 <body>
     
     <?php
-        $conexion=mysqli_connect("localhost","root","","base1") or
-        die("Problemas con la conexión");
-        mysqli_query($conexion,"insert into alumnos(nombre,mail,codigocurso)
-        values ('$_REQUEST[nombre]','$_REQUEST[mail]',$_REQUEST[codigocurso])")
-        or
-        die("Problemas en el select".mysqli_error($conexion));
+    
+        $conexion = mysqli_connect("localhost", "root", "", "base1") or
+            die("Problemas con la conexión");
+        $nombre = $_POST['nombre'];
+        $mail = $_POST['mail'];
+        $codigocurso = $_POST['codigocurso'];
+        mysqli_query($conexion, "INSERT INTO alumnos(nombre, mail, codigocurso) VALUES ('$nombre', '$mail', '$codigocurso')") or
+            die("Problemas en el insert: " . mysqli_error($conexion));
+        echo "El alumno fue registrado correctamente.";
         mysqli_close($conexion);
-        echo "El alumno fue dado de alta.";
     ?>
 
 </body>

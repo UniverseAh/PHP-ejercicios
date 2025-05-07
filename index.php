@@ -54,6 +54,12 @@
     <a href="t2p25formulario.php"> formulario t2p25 </a>
     <br>
     <a href="t2p26formulario.php"> formulario t2p26 </a>
+    <br>
+    <a href="t2p27formulario.php"> formulario t2p27 </a>
+    <br>
+    <a href="t2p28.php"> Solución t2p28 </a>
+    <br>
+    <a href="t2p29formulario.php"> formulario t2p29 </a>
 
 
 
