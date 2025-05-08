@@ -9,8 +9,8 @@
 
     <form action="t2p29.php" method="post">
 
-        Ingrese el mail del alumno:
-        <input type="text" name="mail">
+        Ingrese el código del alumno:
+        <input type="text" name="codigo">
         <br>
         <br>
         

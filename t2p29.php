@@ -8,43 +8,56 @@
 <body>
 
     <?php
-        $conexion=mysqli_connect("localhost","root","","base1") or
-        die("Problemas con la conexión");
-        $registros=mysqli_query($conexion,"select * from alumnos
-        where mail='$_REQUEST[mail]'") or
-        die("Problemas en el select:".mysqli_error($conexion));
+        $conexion = mysqli_connect("localhost", "root", "", "base1") or
+            die("Problemas con la conexión");
 
-        if ($regalu=mysqli_fetch_array($registros))
-        {
+        $registros = mysqli_query($conexion, "SELECT * FROM alumnos WHERE codigo='$_REQUEST[codigo]'") or
+            die("Problemas en el select: " . mysqli_error($conexion));
+
+        if ($espacio = mysqli_fetch_array($registros)) {
     ?>
 
         <form action="t2p29tercera.php" method="post">
-        <input type="hidden" name="mailviejo" value="<?php echo $regalu['mail']?>">
-        <select name="codigocurso">
+            <input type="hidden" name="codigo" value="<?php echo $espacio['codigo']; ?>">
 
-    <?php
-        $registros=mysqli_query($conexion,"select * from cursos") or
-        die("Problemas en el select:".mysqli_error($conexion));
+            Nombre: <input type="text" name="nombre" value="<?php echo $espacio['nombre']; ?>" required>
+            <br><br>
 
-        while ($reg=mysqli_fetch_array($registros))
-        {
-        if ($regalu['codigocurso']==$reg['codigo'])
-        echo "<option value=\"$reg[codigo]\"
-        selected>$reg[nombrecurso]</option>";
-        else
-        echo "<option value=\"$reg[codigo]\">$reg[nombrecurso]</option>";
-        }
-    ?>
+            Mail: <input type="email" name="mail" value="<?php echo $espacio['mail']; ?>" required>
+            <br><br>
 
-        </select>
-        <br>
-        <input type="submit" value="Modificar">
+            Curso:
+            <select name="codigocurso">
+
+                <?php
+                    $cursos = mysqli_query($conexion, "SELECT * FROM cursos") or
+                        die("Problemas en el select: " . mysqli_error($conexion));
+
+                    while ($curso = mysqli_fetch_array($cursos)) {
+                        if ($espacio['codigocurso'] == $curso['codigo']) {
+                            echo "<option value=\"$curso[codigo]\" selected>$curso[nombrecurso]</option>";
+                        } else {
+                            echo "<option value=\"$curso[codigo]\">$curso[nombrecurso]</option>";
+                        }
+                    }
+                ?>
+                
+            </select>
+            <br>
+            <br>
+
+            <input type="submit" value="Modificar">
         </form>
 
+        
     <?php
+
+        } else {
+            echo "No existe un alumno con el código ingresado.";
         }
-        else
-        echo "No existe alumno con dicho mail";
+
+        mysqli_close($conexion);
+
     ?>
 
 </body>
