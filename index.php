@@ -65,6 +65,32 @@
     <br>
     <a href="t2p31opciones.php"> -Solución t2p31 </a>
     <br>
+    <a href="t2p32.php"> -Solución t2p32</a>
+    <br>
+    <a href="t2p33.php"> -Solución t2p33</a>
+    <br>
+    <a href="t3p34.php"> -Solución t3p34</a>
+    <br>
+    <a href="t3p35opciones.php"> -Solución t3p35</a>
+    <br>
+    <a href="t3p36.php"> -Solución t3p36</a>
+    <br>
+    <a href="t3p37opciones.php"> -Solución t3p37</a>
+    <br>
+    <a href="t3p38primero.php"> -Solución t3p38</a>
+    <br>
+    <a href="t3p39opciones.php"> -Solución t3p39</a>
+    <br>
+    <a href="t3p40.php"> -Solución t3p40</a>
+    <br>
+    <a href="t3p41.php"> -Solución t3p41</a>
+    <br>
+    <a href="t3p42.php"> -Solución t3p42</a>
+    <br>
+    <a href="t3p43.php"> -Solución t3p43</a>
+    <br>
+    <a href="t3p45.php"> -Solución t3p45</a>
+    <br>
 
 
 

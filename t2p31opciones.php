@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cursos</title>
 </head>
 <body>
-
-    <A href="t2p31.php?tabla=2">Tabla del 2</A> <br>
-    <A href="t2p31.php?tabla=3">Tabla del 3</A> <br>
-    <A href="t2p31.php?tabla=5">Tabla del 5</A>
-    
+    <h2>Listado de Cursos</h2>
+    <?php
+    $conexion = new mysqli("localhost", "root", "", "base1");
+    if ($conexion->connect_error) {
+        die("Error de conexión: " . $conexion->connect_error);
+    }
+    $sql = "SELECT codigo, nombrecurso FROM cursos";
+    $resultado = $conexion->query($sql);
+    while ($curso = $resultado->fetch_assoc()) {
+        echo "<a href='t2p31.php?codigo={$curso['codigo']}'>" . htmlspecialchars($curso['nombrecurso']) . "</a><br>";
+    }
+    $conexion->close();
+    ?>
 </body>
 </html>
